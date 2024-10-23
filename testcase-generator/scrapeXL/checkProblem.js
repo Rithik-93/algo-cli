@@ -41,7 +41,7 @@ function checkSlugFolders(links) {
         if (!slug) {
             continue;
         }
-        const problemFolder = path.join(__dirname, 'problems', slug);
+        const problemFolder = path.join(__dirname,'..', 'problems', slug);
 
 
         if (fs.existsSync(problemFolder)) {
